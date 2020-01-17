@@ -5,6 +5,7 @@ import subprocess
 import time, sys
 
 #I'm adding better stuff
+#test
 
 LOG_FILENAME = 'app.log'
 logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
