@@ -31,7 +31,6 @@ while userName == userName and password == password: # The Input will always lea
         logging.warning('Failed to sign in') # Lets the user know that the Username and password entered is wrong.
         userName = input("\n\nUsername: ") # Requests the user to have another attempt at entering their correct username
         password = input("Password: ") # Requests the user to have another attempt at entering their correct password
-        count += 1 # Increments the count by 1
         continue # Continue, as the user hasn't managed to get their username and password correct yet
 
 
