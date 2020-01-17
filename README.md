@@ -1,2 +1,2 @@
 # OASIS
- A python program the provides access to many commands
+ A python program that provides access to many commands
