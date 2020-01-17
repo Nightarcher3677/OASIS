@@ -35,7 +35,7 @@ while userName == userName and password == password: # The Input will always lea
         continue # Continue, as the user hasn't managed to get their username and password correct yet
 
 
-    elif userName == 'username and password != 'password': # The userName is equal to 'elmo', but password is NOT equal to 'blue', the user cannot enter FaceSnap
+    elif userName == 'username' and password != 'password':    #The userName is equal to 'elmo', but password is NOT equal to 'blue', the user cannot enter FaceSnap
         print("Your Password is wrong!")
         logging.warning('Failed to sign in') # Lets the user know that their password is wrong
         userName = input("\n\nUsername: ") # Requests the user to have another attempt at entering their correct username
