@@ -20,12 +20,12 @@ while userName == userName and password == password: # The Input will always lea
 
 
 
-    if userName == 'elmo' and password == 'blue':
+    if userName == 'Username' and password == 'password':
         logging.debug('User signed in')
         break # Leave the loop and the whole program as the username and password is correct
 
 
-    elif userName != 'elmo' and password != 'blue': # The userName and password is NOT equal to 'elmo' and 'blue', the user cannot enter FaceSnap
+    elif userName != 'username' and password != 'password': # The userName and password is NOT equal to 'elmo' and 'blue', the user cannot enter FaceSnap
         print("Your Username and Password is wrong!")
         logging.warning('Failed to sign in') # Lets the user know that the Username and password entered is wrong.
         userName = input("\n\nUsername: ") # Requests the user to have another attempt at entering their correct username
@@ -34,7 +34,7 @@ while userName == userName and password == password: # The Input will always lea
         continue # Continue, as the user hasn't managed to get their username and password correct yet
 
 
-    elif userName == 'elmo' and password != 'blue': # The userName is equal to 'elmo', but password is NOT equal to 'blue', the user cannot enter FaceSnap
+    elif userName == 'username and password != 'password': # The userName is equal to 'elmo', but password is NOT equal to 'blue', the user cannot enter FaceSnap
         print("Your Password is wrong!")
         logging.warning('Failed to sign in') # Lets the user know that their password is wrong
         userName = input("\n\nUsername: ") # Requests the user to have another attempt at entering their correct username
@@ -43,7 +43,7 @@ while userName == userName and password == password: # The Input will always lea
         continue # Continue, as the user hasn't managed to get their username and password correct yet
 
 
-    elif userName != 'elmo' and password == 'blue': # The userName is NOT equal to 'elmo', however password is equal to 'blue', the user cannot enter FaceSnap
+    elif userName != 'username' and password == 'password': # The userName is NOT equal to 'elmo', however password is equal to 'blue', the user cannot enter FaceSnap
         print("Your Username is wrong!")
         logging.warning('Failed to sign in') # Lets the user know that their username is wrong
         userName = input("\n\nUsername: ") # Requests the user to have another attempt at entering their correct username
