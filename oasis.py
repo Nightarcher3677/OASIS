@@ -15,9 +15,7 @@ logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S
 userName = input("Welcome to OASIS! \n\nUsername: ") #Ask's the User for Username input
 password = input("Password: ") # Ask's the user for their password
 
-
-
-
+    #the sign in loop
 
 while userName == userName and password == password: # The Input will always lead to this while loop, so we can see if their username and password is wrong or correct.
 
