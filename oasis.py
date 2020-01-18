@@ -3,6 +3,10 @@ import logging
 import logging.handlers
 import subprocess
 import time, sys
+from socket import AF_INET, socket, SOCK_STREAM
+from threading import Thread
+import tkinter
+
 
 LOG_FILENAME = 'app.log'
 logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
@@ -140,11 +144,6 @@ while 1 == i:
         program = " "
     elif program == "chat":
         os.popen('server.py')
-        from socket import AF_INET, socket, SOCK_STREAM
-        from threading import Thread
-        import tkinter
-
-
         def receive():
             """Handles receiving of messages."""
             while True:
