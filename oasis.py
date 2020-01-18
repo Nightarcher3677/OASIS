@@ -140,7 +140,7 @@ while 1 == i:
         mnb = input('press ENTER to exit the database\n\n')
         program = " "
     elif program == "chat":
-        exec(open("server.py").read())
+        subprocess.popen('server.py')
         """Script for Tkinter GUI chat client."""
         from socket import AF_INET, socket, SOCK_STREAM
         from threading import Thread
