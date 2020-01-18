@@ -163,6 +163,7 @@ while 1 == i:
             my_msg.set("")  # Clears input field.
             client_socket.send(bytes(msg, "utf8"))
             if msg == "{quit}":
+                print('please close the oasis terminal')
                 client_socket.close()
                 top.quit()
 
@@ -177,7 +178,7 @@ while 1 == i:
 
         messages_frame = tkinter.Frame(top)
         my_msg = tkinter.StringVar()  # For the messages to be sent.
-        my_msg.set("Type your messages here.")
+        my_msg.set("")
         scrollbar = tkinter.Scrollbar(messages_frame)  # To navigate through past messages.
         # Following will contain the messages.
         msg_list = tkinter.Listbox(messages_frame, height=15, width=50, yscrollcommand=scrollbar.set)
