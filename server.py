@@ -1,6 +1,5 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
-import os
 
 
 clients = {}
@@ -16,7 +15,8 @@ def accept_incoming_connections():
     while True:
         client, client_address = SERVER.accept()
         print("%s:%s has connected." % client_address)
-        client.send(bytes("Greetings from the cave!" + "Now type your name and press enter!", "utf8"))
+        client.send(bytes("type your name and press enter", "utf8"))
+
         addresses[client] = client_address
         Thread(target=handle_client, args=(client,)).start()
 def handle_client(client):  # Takes client socket as argument.
@@ -44,7 +44,8 @@ def broadcast(msg, prefix=""):  # prefix is for name identification.
 if __name__ == "__main__":
     SERVER.listen(5)  # Listens for 5 connections at max.
     print("Waiting for connection...")
-    os.popen('client.py')
+    print('please open the client window that opened behind this window')
+
     ACCEPT_THREAD = Thread(target=accept_incoming_connections)
     ACCEPT_THREAD.start()  # Starts the infinite loop.
     ACCEPT_THREAD.join()
