@@ -141,7 +141,6 @@ while 1 == i:
         program = " "
     elif program == "chat":
         os.popen('server.py')
-        """Script for Tkinter GUI chat client."""
         from socket import AF_INET, socket, SOCK_STREAM
         from threading import Thread
         import tkinter
