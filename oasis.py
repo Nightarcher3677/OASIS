@@ -19,7 +19,7 @@ while userName == userName and password == password: # The Input will always lea
 
 
 
-    if userName == 'Username' and password == 'password':
+    if userName == 'username' and password == 'password':
         logging.debug('User signed in')
         break # Leave the loop and the whole program as the username and password is correct
 
