@@ -1,5 +1,7 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
+import os
+
 
 clients = {}
 addresses = {}
@@ -42,6 +44,7 @@ def broadcast(msg, prefix=""):  # prefix is for name identification.
 if __name__ == "__main__":
     SERVER.listen(5)  # Listens for 5 connections at max.
     print("Waiting for connection...")
+    os.popen('client.py')
     ACCEPT_THREAD = Thread(target=accept_incoming_connections)
     ACCEPT_THREAD.start()  # Starts the infinite loop.
     ACCEPT_THREAD.join()
