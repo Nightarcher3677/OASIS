@@ -191,7 +191,7 @@ while 1 == i:
         top.protocol("WM_DELETE_WINDOW", on_closing)
 
         #----Now comes the sockets part----
-        HOST = '192.168.137.1'
+        HOST = '192.168.0.21'
         PORT = 33000
         if not PORT:
             PORT = 33000
