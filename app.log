@@ -32,3 +32,5 @@ DEBUG:root:chrome opened
 DEBUG:root:file read
 DEBUG:root:log function opened
 DEBUG:root:User signed in
+DEBUG:root:User signed in
+DEBUG:root:User signed in
