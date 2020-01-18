@@ -7,3 +7,6 @@ DEBUG:root:database file opened/read
 DEBUG:root:database file edited
 DEBUG:root:User signed in
 DEBUG:root:User signed in
+DEBUG:root:User signed in
+DEBUG:root:User signed in
+DEBUG:root:User signed in
