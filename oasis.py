@@ -6,6 +6,7 @@ import time, sys
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 import tkinter
+import ssl
 
 
 LOG_FILENAME = 'app.log'
