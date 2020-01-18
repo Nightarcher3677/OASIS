@@ -1,5 +1,5 @@
-import Tkinter
-top = Tkinter.Tk()
+import tkinter
+top = tkinter.Tk()
 # Code to add widgets will go here...
 
 L1 = Label(top, text="Username")
