@@ -1,4 +1,3 @@
-#importing all the modules
 import os
 import logging
 import logging.handlers
