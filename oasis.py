@@ -164,8 +164,6 @@ while 1 == i:
                 print('please close the oasis terminal')
                 client_socket.close()
                 top.quit()
-
-
         def on_closing(event=None):
             """This function is to be called when the window is closed."""
             my_msg.set("{quit}")
