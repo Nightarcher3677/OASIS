@@ -195,8 +195,8 @@ while 1 == i:
         top.protocol("WM_DELETE_WINDOW", on_closing)
 
         #----Now comes the sockets part----
-        HOST = input('Enter host: ')
-        PORT = input('Enter port: ')
+        HOST = 192.168.137.1
+        PORT = 33000
         if not PORT:
             PORT = 33000
         else:
@@ -211,7 +211,7 @@ while 1 == i:
         receive_thread = Thread(target=receive)
         receive_thread.start()
         tkinter.mainloop()  # Starts GUI execution.
-
+        oiioio = input("press enter to quit \n\n")
         program = " "
     elif program == "exit":
         logging.debug('OASIS exited')
