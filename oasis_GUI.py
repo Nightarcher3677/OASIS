@@ -29,4 +29,9 @@ createfileimg = PhotoImage(file="create file.png")
 createfile = Button(win, text="createfile", image=createfileimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("createfile.py"))
 createfile.place(x=545, y=150)
 
+deletefileimg = PhotoImage(file="deletefile.png")
+deletefile = Button(win, text="deletefile", image=deletefileimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("deletefile.py"))
+deletefile.place(x=545 + 170, y=150)
+
+
 win.mainloop()
