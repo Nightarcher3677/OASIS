@@ -5,7 +5,7 @@ import subprocess
 win = Tk()
 win.title("OASIS Chat Picker")
 win.resizable(width=False, height=False)
-win.geometry("900x600")
+win.geometry("750fx600")
 win.configure(background="Black")
 win.iconbitmap("applogo.ico")
 
@@ -16,3 +16,5 @@ systeminfo.place(x=35, y=150)
 createfileimg = PhotoImage(file="chat_server.png")
 createfile = Button(win, text="createfile", image=createfileimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("chat.py"))
 createfile.place(x=545, y=150)
+
+win.mainloop()
