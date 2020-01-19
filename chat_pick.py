@@ -5,7 +5,7 @@ import subprocess
 win = Tk()
 win.title("OASIS Chat Picker")
 win.resizable(width=False, height=False)
-win.geometry("750fx600")
+win.geometry("750x600")
 win.configure(background="Black")
 win.iconbitmap("applogo.ico")
 
