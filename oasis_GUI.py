@@ -1,5 +1,6 @@
 from tkinter import *
 import os
+import subprocess
 #import win32gui
 
 #Minimize = win32gui.GetForegroundWindow()
@@ -40,7 +41,12 @@ deletefile.place(x=545 + 170, y=150)
 
 cdeletefileimg = PhotoImage(file="cdeletefile.png")
 cdeletefile = Button(win, text="cdeletefile", image=cdeletefileimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: subprocess.call(['C:\Program Files (x86)\Minecraft Launcher\MinecraftLauncher.exe']))
-cdeletefile.place(x=545 + 170, y=150)
+cdeletefile.place(x=35, y=253)
+
+msconfigimg = PhotoImage(file="readfile.png")
+msconfig = Button(win, text="MSCONFIG", image=msconfigimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("readfile.py"))
+msconfig.place(x=205, y=253)
+
 
 #import win32con
 #win32gui.ShowWindow(['C:Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.1776.0_x64_qbz5n2kfra8p0\python.exe'], win32con.SW_MINIMIZE)
