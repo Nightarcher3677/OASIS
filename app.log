@@ -52,3 +52,5 @@ DEBUG:root:database opened
 DEBUG:root:database file OASIS opened
 DEBUG:root:database file opened/read
 DEBUG:root:database opened
+DEBUG:root:database opened
+DEBUG:root:database opened

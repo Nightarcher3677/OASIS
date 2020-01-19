@@ -25,5 +25,8 @@ cmdimg = PhotoImage(file="cmd.png")
 cmd = Button(win, text="TASKMGR", width=150, height=67, highlightthickness= 0, borderwidth=0, image=cmdimg, command= lambda: os.popen("cmd.py"))
 cmd.place(x=375, y=150)
 
+createfileimg = PhotoImage(file="create file.png")
+createfile = Button(win, text="createfile", image=diskimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.system("diskmgmt.msc"))
+createfile.place(x=545, y=150)
 
 win.mainloop()
