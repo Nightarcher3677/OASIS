@@ -11,4 +11,14 @@ fondoimg = PhotoImage(file="GUI_Background.png")
 fondoshow = Label(win, text="", image=fondoimg)
 fondoshow.pack()
 
+
+
+systeminfoimg = PhotoImage(file="UI/systeminfo.png")
+systeminfo = Button(win, text="SYSTEMINFO", image=systeminfoimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("chat.py"))
+systeminfo.place(x=35, y=150)
+
+
+
+
+
 win.mainloop()
