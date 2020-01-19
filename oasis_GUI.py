@@ -1,19 +1,13 @@
+from tkinter import *
 import os
-import logging
-import logging.handlers
-import subprocess
-import time, sys
-from socket import AF_INET, socket, SOCK_STREAM
-from threading import Thread
-import tkinter
-import ssl
+
 win = Tk()
 win.title("OASIS")
 win.resizable(width=False, height=False)
 win.geometry("900x600")
 win.configure(background="Black")
 
-fondoimg = PhotoImage(file="GUI_Background.png")
+fondoimg = PhotoImage(file="w.png")
 fondoshow = Label(win, text="", image=fondoimg)
 fondoshow.pack()
 

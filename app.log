@@ -40,3 +40,14 @@ DEBUG:root:User signed in
 DEBUG:root:User signed in
 DEBUG:root:User signed in
 DEBUG:root:User signed in
+DEBUG:root:database opened
+DEBUG:root:database file Oasis opened
+DEBUG:root:database file opened/read
+DEBUG:root:database opened
+DEBUG:root:database opened
+DEBUG:root:database file oasis opened
+DEBUG:root:database file opened/read
+DEBUG:root:database file edited
+DEBUG:root:database opened
+DEBUG:root:database file OASIS opened
+DEBUG:root:database file opened/read
