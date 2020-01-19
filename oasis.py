@@ -1,9 +1,13 @@
-#importing all the modules
 import os
 import logging
 import logging.handlers
 import subprocess
 import time, sys
+from socket import AF_INET, socket, SOCK_STREAM
+from threading import Thread
+import tkinter
+import ssl
+
 
 LOG_FILENAME = 'app.log'
 logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
@@ -11,9 +15,7 @@ logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S
 userName = input("Welcome to OASIS! \n\nUsername: ") #Ask's the User for Username input
 password = input("Password: ") # Ask's the user for their password
 
-
-
-
+    #the sign in loop
 
 while userName == userName and password == password: # The Input will always lead to this while loop, so we can see if their username and password is wrong or correct.
 
@@ -141,11 +143,6 @@ while 1 == i:
         program = " "
     elif program == "chat":
         os.popen('server.py')
-        from socket import AF_INET, socket, SOCK_STREAM
-        from threading import Thread
-        import tkinter
-
-
         def receive():
             """Handles receiving of messages."""
             while True:
@@ -165,8 +162,6 @@ while 1 == i:
                 print('please close the oasis terminal')
                 client_socket.close()
                 top.quit()
-
-
         def on_closing(event=None):
             """This function is to be called when the window is closed."""
             my_msg.set("{quit}")
@@ -180,7 +175,7 @@ while 1 == i:
         my_msg.set("")
         scrollbar = tkinter.Scrollbar(messages_frame)  # To navigate through past messages.
         # Following will contain the messages.
-        msg_list = tkinter.Listbox(messages_frame, height=15, width=50, yscrollcommand=scrollbar.set)
+        msg_list = tkinter.Listbox(messages_frame, height=50, width=100, yscrollcommand=scrollbar.set)
         scrollbar.pack(side=tkinter.RIGHT, fill=tkinter.Y)
         msg_list.pack(side=tkinter.LEFT, fill=tkinter.BOTH)
         msg_list.pack()
@@ -195,7 +190,7 @@ while 1 == i:
         top.protocol("WM_DELETE_WINDOW", on_closing)
 
         #----Now comes the sockets part----
-        HOST = '192.168.137.1'
+        HOST = '192.168.0.21'
         PORT = 33000
         if not PORT:
             PORT = 33000
