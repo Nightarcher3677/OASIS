@@ -1,10 +1,10 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 
-
+bnm = input('please enter your IP address. \n\nIp: ')
 clients = {}
 addresses = {}
-HOST = '192.168.0.21'
+HOST = bnm
 PORT = 33000
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
