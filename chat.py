@@ -11,6 +11,10 @@ import ssl
 
 
 os.popen('server.py')
+
+zxcv = input("please enter the ip of the computer you are trying to connect to \n\nIp:")
+
+
 def receive():
     """Handles receiving of messages."""
     while True:
