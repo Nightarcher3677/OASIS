@@ -26,7 +26,7 @@ cmd = Button(win, text="TASKMGR", width=150, height=67, highlightthickness= 0, b
 cmd.place(x=375, y=150)
 
 createfileimg = PhotoImage(file="create file.png")
-createfile = Button(win, text="createfile", image=diskimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.system("createfile.py"))
+createfile = Button(win, text="createfile", image=createfileimg, width=150, height=67,borderwidth=0, highlightthickness= 0, command= lambda: os.popen("createfile.py"))
 createfile.place(x=545, y=150)
 
 win.mainloop()
