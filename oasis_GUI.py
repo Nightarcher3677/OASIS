@@ -1,14 +1,14 @@
-import tkinter
-top = tkinter.Tk()
-# Code to add widgets will go here...
+from tkinter import *
+import os
 
-L1 = Label(top, text="Username")
-L1.pack( side = LEFT)
-E1 = Entry(top, bd =5)
-E1.pack(side = RIGHT)
-R1 = Label(top, text="Password")
-R1.pack( side = LEFT)
-E1 = Entry(top, bd =10)
-E1.pack(side = RIGHT)
+win = Tk()
+win.title("Hades")
+win.resizable(width=False, height=False)
+win.geometry("900x600")
+win.configure(background="Black")
 
-top.mainloop()
+fondoimg = PhotoImage(file="logo.png")
+fondoshow = Label(win, text="", image=fondoimg)
+fondoshow.pack()
+
+win.mainloop()
