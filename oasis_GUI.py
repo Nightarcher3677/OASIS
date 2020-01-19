@@ -21,7 +21,9 @@ adminimg = PhotoImage(file="database.png")
 admin = Button(win, text="TASKMGR", width=150, height=67, highlightthickness= 0, borderwidth=0, image=adminimg, command= lambda: os.popen("database.py"))
 admin.place(x=205, y=150)
 
-
+cmdimg = PhotoImage(file="cmd.png")
+cmd = Button(win, text="TASKMGR", width=150, height=67, highlightthickness= 0, borderwidth=0, image=cmdimg, command= lambda: os.popen("cmd.py"))
+cmd.place(x=375, y=150)
 
 
 win.mainloop()
