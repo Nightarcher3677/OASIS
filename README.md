@@ -6,7 +6,7 @@ to run, move the contents of the folder to your user folder and in the command p
 
  # credit to:
  alan-bur for not sueing me for using half his code ( https://github.com/Alan-bur/Hades/ )<br>
- gluester for making the exe<br>
+ gluester for support and trying making the exe<br>
  cizzzzz for making the client script for the chat<br>
  
  [![Run on Repl.it](https://repl.it/badge/github/Nightarcher3677/OASIS)](https://repl.it/github/Nightarcher3677/OASIS)
